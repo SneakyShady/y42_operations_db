@@ -1,0 +1,17 @@
+{
+  "$schema": "https://s.y42.com/frontend/0.0.4/alert/status-alert-settings.json",
+  "feature_type": "Integration",
+  "alert_on": [
+    "failure"
+  ],
+  "triggered_by": [
+    "orchestration"
+  ],
+  "title": "Critical Integration Failure",
+  "message_body": "<p>{{status}} to run the {{object_name}} {{feature_type}} at {{completed_at}}.</p><p><br></p><p>Here is the link to your {{feature_type}}: {{url}}</p><p><br></p><p>Have a nice day,</p><p>Y42</p>",
+  "patterns": [],
+  "tags": [
+    "critical"
+  ],
+  "destinations": []
+}
