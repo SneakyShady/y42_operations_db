@@ -17,7 +17,7 @@
       },
       "isGroup": true,
       "group": "",
-      "location": "-483.32000000000005 1.1320754716981014"
+      "location": "-543.9031626821219 1.1320754716981014"
     },
     {
       "key": "c264a11d-72ab-40e0-a9e5-a48b4e5369c5",
@@ -36,7 +36,7 @@
       },
       "isGroup": true,
       "group": "",
-      "location": "-484.44 -192.92452830188677"
+      "location": "-543.7061374064235 -192.92452830188677"
     },
     {
       "key": "9eef3ff0-b000-49f9-a1a8-caec587c0604",
@@ -49,7 +49,7 @@
         "transformObject": {
           "type": "inner",
           "left": "8432a92e-ef16-42e8-a918-e3d0060d2823",
-          "right": "339eef18-0320-421e-bf64-4dbfed3b2d9d",
+          "right": "427ebfb0-0038-4be9-9c8a-f8db56a1d1b4",
           "joinConditions": [
             {
               "left": "id",
@@ -680,50 +680,6 @@
             "sourceTypeChanged": false
           },
           {
-            "target": "campaign_source_c",
-            "source": "campaign_source_c",
-            "type": "STRING",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "source_alias": "",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "campaign_medium_c",
-            "source": "campaign_medium_c",
-            "type": "STRING",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "source_alias": "",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "campaign_keyword_c",
-            "source": "campaign_keyword_c",
-            "type": "STRING",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "source_alias": "",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
-            "target": "conversion_attribution_c",
-            "source": "conversion_attribution_c",
-            "type": "STRING",
-            "display": false,
-            "changed": false,
-            "description": "",
-            "source_alias": "",
-            "applied": true,
-            "sourceTypeChanged": false
-          },
-          {
             "target": "accounttype_c",
             "source": "accounttype_c",
             "type": "STRING",
@@ -804,7 +760,7 @@
       },
       "isGroup": true,
       "group": "",
-      "location": "-279.12 0.1320754716981014"
+      "location": "-339.70316268212184 0.1320754716981014"
     },
     {
       "key": "b9a98621-0c8d-49c9-b539-2d2e7273f164",
@@ -3041,7 +2997,7 @@
       },
       "isGroup": true,
       "group": "",
-      "location": "-273.76 -194.03773584905662"
+      "location": "-333.0261374064235 -194.03773584905662"
     },
     {
       "key": "8432a92e-ef16-42e8-a918-e3d0060d2823",
@@ -3075,33 +3031,7 @@
       },
       "isGroup": true,
       "group": "",
-      "location": "-29.083414634146266 -194.6262995764344"
-    },
-    {
-      "key": "fd551592-7e16-4651-879e-dc313023a8bf",
-      "type": "GROUP_BY",
-      "category": "GROUP_BY",
-      "transformationStep": {
-        "id": "fd551592-7e16-4651-879e-dc313023a8bf",
-        "title": "",
-        "transformationType": "GROUP_BY",
-        "transformObject": {
-          "columns": [
-            {
-              "name": "id",
-              "alias": "count",
-              "func": "COUNT"
-            }
-          ],
-          "groupBy": [
-            "co_created|day",
-            "conversion_object_type_name_c"
-          ]
-        }
-      },
-      "isGroup": true,
-      "group": "",
-      "location": "610.5263414634147 -182.38140161725073"
+      "location": "-88.34955204056979 -194.6262995764344"
     },
     {
       "key": "3b8bbc54-a402-4eeb-9287-f7eada7da09c",
@@ -3117,13 +3047,13 @@
             {
               "target": "co_created",
               "source": "co_created",
-              "type": "DATE",
+              "type": "TIMESTAMP",
               "display": true,
               "changed": false,
               "description": "",
               "source_alias": "",
               "applied": false,
-              "sourceTypeChanged": false
+              "sourceTypeChanged": true
             },
             {
               "target": "conversion_object_type_name_c",
@@ -3137,10 +3067,109 @@
               "sourceTypeChanged": false
             },
             {
-              "target": "count",
-              "source": "count",
-              "type": "NUMERIC",
+              "target": "id",
+              "source": "id",
+              "type": "STRING",
               "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "name",
+              "source": "name",
+              "type": "STRING",
+              "display": false,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "type",
+              "source": "type",
+              "type": "STRING",
+              "display": false,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "pretty_domain_c",
+              "source": "pretty_domain_c",
+              "type": "STRING",
+              "display": false,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "sic_major_industry_group_c",
+              "source": "sic_major_industry_group_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "account_c",
+              "source": "account_c",
+              "type": "STRING",
+              "display": false,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "campaign_source_c",
+              "source": "campaign_source_c",
+              "type": "STRING",
+              "display": false,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "campaign_medium_c",
+              "source": "campaign_medium_c",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "campaign_keyword_c",
+              "source": "campaign_keyword_c",
+              "type": "STRING",
+              "display": false,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
+            },
+            {
+              "target": "conversion_attribution_c",
+              "source": "conversion_attribution_c",
+              "type": "STRING",
+              "display": false,
               "changed": false,
               "description": "",
               "source_alias": "",
@@ -3152,7 +3181,84 @@
       },
       "isGroup": true,
       "group": "",
-      "location": "864.7946341463415 -182.52425876010784"
+      "location": "613.2428064879658 -181.20723348440953"
+    },
+    {
+      "key": "1db8d402-e38a-448d-8d89-7293e346c29b",
+      "type": "FUNCTIONS",
+      "category": "FUNCTIONS",
+      "transformationStep": {
+        "id": "1db8d402-e38a-448d-8d89-7293e346c29b",
+        "title": "",
+        "transformationType": "FUNCTIONS",
+        "transformObject": [
+          {
+            "target": "campaign_medium_c",
+            "originalString": "IF(\n\tIS_NULL(\n\t\t@campaign_medium_c\n\t),\n\t'organic',\n\t@campaign_medium_c\n)"
+          }
+        ]
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "-106.36602050091966 -1.2463574858711013"
+    },
+    {
+      "key": "427ebfb0-0038-4be9-9c8a-f8db56a1d1b4",
+      "type": "FILTER",
+      "category": "FILTER",
+      "transformationStep": {
+        "id": "427ebfb0-0038-4be9-9c8a-f8db56a1d1b4",
+        "title": "",
+        "transformationType": "FILTER",
+        "transformObject": {
+          "global_op": [
+            "AND"
+          ],
+          "filterOps": [
+            {
+              "variable_field_name": "conversion_object_type_name_c",
+              "variable_type": "STRING",
+              "operations": [
+                {
+                  "operator": "!",
+                  "value_type": "NONE",
+                  "operator_type": "absolute",
+                  "values": [
+                    "CMC"
+                  ]
+                }
+              ]
+            },
+            {
+              "variable_field_name": "conversion_object_type_name_c",
+              "variable_type": "STRING",
+              "operations": [
+                {
+                  "operator": "is_not_empty",
+                  "values": []
+                }
+              ]
+            },
+            {
+              "variable_field_name": "conversion_object_type_name_c",
+              "variable_type": "STRING",
+              "operations": [
+                {
+                  "operator": "!",
+                  "value_type": "NONE",
+                  "operator_type": "absolute",
+                  "values": [
+                    "OnINBOX Manager"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "114.4123873008956 -2.428992427314597"
     }
   ],
   "linkDataArray": [
@@ -3182,19 +3288,25 @@
     },
     {
       "from": "339eef18-0320-421e-bf64-4dbfed3b2d9d",
+      "to": "1db8d402-e38a-448d-8d89-7293e346c29b",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "to": "427ebfb0-0038-4be9-9c8a-f8db56a1d1b4",
+      "from": "1db8d402-e38a-448d-8d89-7293e346c29b",
+      "frompid": "OUT",
+      "topid": "IN"
+    },
+    {
+      "from": "427ebfb0-0038-4be9-9c8a-f8db56a1d1b4",
       "to": "9eef3ff0-b000-49f9-a1a8-caec587c0604",
       "frompid": "OUT",
       "topid": "R"
     },
     {
-      "to": "fd551592-7e16-4651-879e-dc313023a8bf",
       "from": "9eef3ff0-b000-49f9-a1a8-caec587c0604",
-      "frompid": "OUT",
-      "topid": "IN"
-    },
-    {
       "to": "3b8bbc54-a402-4eeb-9287-f7eada7da09c",
-      "from": "fd551592-7e16-4651-879e-dc313023a8bf",
       "frompid": "OUT",
       "topid": "IN"
     }
