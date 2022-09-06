@@ -1,0 +1,83 @@
+{
+  "$schema": "https://s.y42.com/frontend/0.0.4/visualization/visualization-widget-settings.json",
+  "chart_type": "pie_chart",
+  "settings": {
+    "series": [
+      {
+        "field_id": "e054ba68_a69c_4971_b737_ddd270c9f886",
+        "mark": "bar",
+        "stack_name": 1,
+        "color": {
+          "field_id": null,
+          "extrema": {}
+        },
+        "label": {
+          "show": false,
+          "field_ids": [],
+          "rotate": 0,
+          "align": "center",
+          "verticalAlign": "top"
+        },
+        "tooltip": {
+          "show": true,
+          "field_ids": []
+        },
+        "show_right_axis": false,
+        "format": "0a",
+        "formatConfig": {
+          "numeralFormat": "0a",
+          "formatType": "NUMBER",
+          "decimalPlaces": 0,
+          "negativeSymbol": {
+            "show": true,
+            "type": "symbol"
+          },
+          "displayType": "DISPLAY_UNITS",
+          "separator": "NONE",
+          "locale": "",
+          "prefixOrSuffix": "suffix",
+          "customFormat": ""
+        }
+      }
+    ],
+    "show_legend": true,
+    "axisPointer": {
+      "show": false,
+      "type": "line",
+      "lineStyle": {
+        "type": "solid",
+        "opacity": 1
+      }
+    },
+    "dimensions": [],
+    "breakdowns": [
+      "665a9efb_383c_4424_ac0b_dc3e79ac22f7"
+    ],
+    "show_as_donut": false,
+    "size": []
+  },
+  "datasource_table_path": "src/Models/UI/Conversion_Objects_by_Account/conversion_objects_by_prospect",
+  "filters": [],
+  "fields": [
+    {
+      "field": "campaign_medium_c",
+      "aggregation": "VALUE",
+      "type": "STRING",
+      "alias": "VALUE_campaign_medium_c_665a9efb_383c_4424_ac0b_dc3e79ac22f7",
+      "id": "665a9efb_383c_4424_ac0b_dc3e79ac22f7",
+      "lowCodeString": null,
+      "show_in_percentage": false,
+      "filters": []
+    },
+    {
+      "field": "id",
+      "aggregation": "COUNT",
+      "type": "STRING",
+      "alias": "COUNT_id_e054ba68_a69c_4971_b737_ddd270c9f886",
+      "id": "e054ba68_a69c_4971_b737_ddd270c9f886",
+      "lowCodeString": null,
+      "show_in_percentage": false,
+      "filters": []
+    }
+  ]
+}

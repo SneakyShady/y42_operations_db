@@ -1,0 +1,33 @@
+{
+  "$schema": "https://s.y42.com/frontend/0.0.4/visualization/visualization-canvas-element.json",
+  "type": "Widget",
+  "position": {
+    "x": -128.60465441475478,
+    "y": 32.48153212223721
+  },
+  "size": {
+    "height": 545,
+    "width": 666
+  },
+  "zIndex": 0,
+  "layer": "default",
+  "angle": 0,
+  "typeSettings": {
+    "widgetPath": "src/Visualizations/Widgets/Cumulative_Conversion_Objects"
+  },
+  "styles": {
+    "background-color": "#ffffff",
+    "border-color": "#f2f2f2",
+    "border-style": "solid",
+    "border-width": "1px",
+    "border-radius": "0",
+    "filter": "drop-shadow(0px 0px 0px #939393)"
+  },
+  "locked": false,
+  "objectProperties": {
+    "resizable": true,
+    "movable": true,
+    "selectable": true,
+    "rotatable": true
+  }
+}
