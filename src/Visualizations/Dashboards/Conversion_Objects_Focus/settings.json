@@ -4,5 +4,6 @@
   "order": [
     "src/Visualizations/Dashboards/Conversion_Objects_Focus/Tab_1"
   ],
+  "last_used_datasource_table_path": "src/Models/UI/Conversion_Objects_by_Account/conversion_objects_by_prospect",
   "enable_cross_filtering": true
 }

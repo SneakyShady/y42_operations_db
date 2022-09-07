@@ -251,9 +251,9 @@
       },
       {
         "field": "co_created",
-        "aggregation": "MONTH_YEAR",
+        "aggregation": "DAY_MONTH_YEAR",
         "type": "TIMESTAMP",
-        "alias": "MONTH_YEAR_co_created_654b2fa4_4066_426b_87ed_503de1d731fc",
+        "alias": "DAY_MONTH_YEAR_co_created_654b2fa4_4066_426b_87ed_503de1d731fc",
         "id": "654b2fa4_4066_426b_87ed_503de1d731fc",
         "lowCodeString": null,
         "show_in_percentage": false,

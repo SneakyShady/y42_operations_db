@@ -1,0 +1,20 @@
+{
+  "$schema": "https://s.y42.com/frontend/0.0.4/visualization/visualization-filter-settings.json",
+  "datasource_table_path": "src/Models/UI/Conversion_Objects_by_Account/conversion_objects_by_prospect",
+  "field_name": "co_created",
+  "data_type": "TIMESTAMP",
+  "type": "date",
+  "operations": [
+    {
+      "type": "TIMESTAMP",
+      "operator": "-",
+      "operator_type": "relative",
+      "value_type": "Days",
+      "values": [
+        "-30",
+        "0"
+      ]
+    }
+  ],
+  "options": {}
+}

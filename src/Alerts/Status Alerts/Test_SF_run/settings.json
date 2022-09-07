@@ -15,6 +15,13 @@
   ],
   "destinations": [
     {
+      "type": "internal_notification",
+      "user_ids": [
+        "eliott.sacau@redsift.io"
+      ],
+      "team_ids": []
+    },
+    {
       "type": "email",
       "custom_emails": [],
       "user_ids": [
