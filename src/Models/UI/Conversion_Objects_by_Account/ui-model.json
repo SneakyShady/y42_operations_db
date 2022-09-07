@@ -3147,7 +3147,7 @@
               "target": "campaign_source_c",
               "source": "campaign_source_c",
               "type": "STRING",
-              "display": false,
+              "display": true,
               "changed": false,
               "description": "",
               "source_alias": "",
