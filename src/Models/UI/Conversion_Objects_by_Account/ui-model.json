@@ -75,6 +75,17 @@
         "transformationType": "FIELDS",
         "transformObject": [
           {
+            "target": "co_id",
+            "source": "id",
+            "type": "STRING",
+            "display": true,
+            "changed": false,
+            "description": "",
+            "source_alias": "",
+            "applied": true,
+            "sourceTypeChanged": false
+          },
+          {
             "target": "ownerid",
             "source": "ownerid",
             "type": "STRING",
@@ -3053,7 +3064,7 @@
               "description": "",
               "source_alias": "",
               "applied": false,
-              "sourceTypeChanged": true
+              "sourceTypeChanged": false
             },
             {
               "target": "conversion_object_type_name_c",
@@ -3175,6 +3186,17 @@
               "source_alias": "",
               "applied": false,
               "sourceTypeChanged": false
+            },
+            {
+              "target": "co_id",
+              "source": "co_id",
+              "type": "STRING",
+              "display": true,
+              "changed": false,
+              "description": "",
+              "source_alias": "",
+              "applied": false,
+              "sourceTypeChanged": false
             }
           ]
         }
@@ -3193,8 +3215,8 @@
         "transformationType": "FUNCTIONS",
         "transformObject": [
           {
-            "target": "campaign_medium_c",
-            "originalString": "IF(\n\tIS_NULL(\n\t\t@campaign_medium_c\n\t),\n\t'organic',\n\t@campaign_medium_c\n)"
+            "target": "campaign_source_c",
+            "originalString": "IF(\n\tIS_NULL(\n\t\t@campaign_source_c\n\t),\n\t'organic',\n\tIF(CONTAINS(@campaign_source_c, 'google') || CONTAINS(@campaign_source_c, 'ads') || CONTAINS(@campaign_source_c, 'ad'),\n\t'google_cpc',\n\t@campaign_source_c\n\t)\n)"
           }
         ]
       },
@@ -3259,6 +3281,40 @@
       "isGroup": true,
       "group": "",
       "location": "114.4123873008956 -2.428992427314597"
+    },
+    {
+      "key": "1af7e8a7-c8b8-49ea-858c-42890b07cfb2",
+      "type": "FILTER",
+      "category": "FILTER",
+      "transformationStep": {
+        "id": "1af7e8a7-c8b8-49ea-858c-42890b07cfb2",
+        "title": "",
+        "transformationType": "FILTER",
+        "transformObject": {
+          "global_op": [
+            "AND"
+          ],
+          "filterOps": [
+            {
+              "variable_field_name": "co_created",
+              "variable_type": "TIMESTAMP",
+              "operations": [
+                {
+                  "operator": ">",
+                  "value_type": "NONE",
+                  "operator_type": "absolute",
+                  "values": [
+                    "202208020000"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "isGroup": true,
+      "group": "",
+      "location": "405.5388752078903 69.16301457009911"
     }
   ],
   "linkDataArray": [
@@ -3309,7 +3365,13 @@
       "to": "3b8bbc54-a402-4eeb-9287-f7eada7da09c",
       "frompid": "OUT",
       "topid": "IN"
+    },
+    {
+      "from": "427ebfb0-0038-4be9-9c8a-f8db56a1d1b4",
+      "to": "1af7e8a7-c8b8-49ea-858c-42890b07cfb2",
+      "frompid": "OUT",
+      "topid": "IN"
     }
   ],
-  "$schema": "https://s.dev.y42.dev/integrations/ui_model/0.0.1/model.json"
+  "$schema": "https://s.dev.y42.dev/integrations/ui_model/0.0.0/model.json"
 }
