@@ -240,16 +240,6 @@
     "filters": [],
     "fields": [
       {
-        "field": "conversion_object_type_name_c",
-        "aggregation": "VALUE",
-        "type": "STRING",
-        "alias": "VALUE_conversion_object_type_name_c_f9f62616_73e4_47a0_bbf1_d2783f2cafaa",
-        "id": "f9f62616_73e4_47a0_bbf1_d2783f2cafaa",
-        "lowCodeString": null,
-        "show_in_percentage": false,
-        "filters": []
-      },
-      {
         "field": "co_created",
         "aggregation": "DAY_MONTH_YEAR",
         "type": "TIMESTAMP",
@@ -261,10 +251,20 @@
       },
       {
         "field": "id",
-        "aggregation": "COUNT",
+        "aggregation": "DISTINCT",
         "type": "STRING",
-        "alias": "COUNT_id_b0a27c28_6b6b_4d36_8d8e_6fd7fbafbc78",
+        "alias": "DISTINCT_id_b0a27c28_6b6b_4d36_8d8e_6fd7fbafbc78",
         "id": "b0a27c28_6b6b_4d36_8d8e_6fd7fbafbc78",
+        "lowCodeString": null,
+        "show_in_percentage": false,
+        "filters": []
+      },
+      {
+        "field": "conversion_object_type_name_c",
+        "aggregation": "VALUE",
+        "type": "STRING",
+        "alias": "VALUE_conversion_object_type_name_c_1e3bf615_e176_4fc3_bec1_1de9a09b1f01",
+        "id": "1e3bf615_e176_4fc3_bec1_1de9a09b1f01",
         "lowCodeString": null,
         "show_in_percentage": false,
         "filters": []
@@ -289,7 +289,7 @@
           },
           "show_right_axis": false,
           "format": "0",
-          "cumulative": true,
+          "cumulative": false,
           "hidden": false,
           "formatConfig": {
             "numeralFormat": "0",
@@ -320,7 +320,7 @@
         "654b2fa4_4066_426b_87ed_503de1d731fc"
       ],
       "breakdowns": [
-        "f9f62616_73e4_47a0_bbf1_d2783f2cafaa"
+        "1e3bf615_e176_4fc3_bec1_1de9a09b1f01"
       ],
       "series_on_y": true,
       "serieAxis": {
