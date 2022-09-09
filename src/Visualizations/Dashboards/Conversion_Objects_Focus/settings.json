@@ -1,5 +1,5 @@
 {
-  "$schema": "https://s.y42.com/frontend/0.0.4/visualization/visualization-dashboard-settings.json",
+  "$schema": "https://s.y42.com/frontend/0.0.5/visualization/visualization-dashboard-settings.json",
   "theme": "src/Visualizations/Themes/chalk-08e40332-8a68-4019-824c-8486954e86f6.json",
   "order": [
     "src/Visualizations/Dashboards/Conversion_Objects_Focus/Tab_1"
