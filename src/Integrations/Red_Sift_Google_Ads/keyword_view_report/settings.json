@@ -3,10 +3,7 @@
   "columns": [
     "resource_name",
     "ad_network_type",
-    "click_type",
     "conversion_action",
-    "conversion_action_category",
-    "conversion_action_name",
     "date",
     "all_conversions",
     "all_conversions_value",
